@@ -6,42 +6,28 @@ class: "Department of Electrical Engineering - Wasit university first stage"
 categories: 2014-2015
 ---
 
-<h1 class="page-header">Text Book</h1>
-1.	Computer System Architecture Third Edition M. Morris Mano
-2.	Digital Fundamentals  Tenth Edition   FLOYD
+# Text Book
+1. Computer System Architecture Third Edition M. Morris Mano
+2. Digital Fundamentals  Tenth Edition   FLOYD
 
-<h1 class="page-header">Syllabus</h1>
-<table class="table table-bordered table-hover table-responsive">
+# Syllabus
 
-	<tbody><tr><td>Week</td><td>Covered Topics</td><td>Note</td></tr>
-		<tr><td> 1	</td>
-			<td>Introduction to Digital Techniques</td><td><a href="/courses/DigitalTechniques/2015/ch1.pdf">PDF</a></td></tr>
-			<tr><td> 2	</td>
-				<td> Number Systems</td><td rowspan="4">
-				<a href="/courses/DigitalTechniques/2015/ch2.pdf">
-					<p class="text-center">PDF</p></a>
-				</td>
-			</tr>
-			<tr><td> 3</td>
-				<td> Numbers base conversion</td></tr>
-				<tr><td> 4	</td>
-					<td> Binary Representation of signed numbers</td></tr>
-					<tr><td> 5	</td>
-						<td> Binary arithmetic’s</td> </tr>
-						<tr><td> 6	</td><td> Logic Gates   </td><td><a href="/courses/DigitalTechniques/2015/ch3.pdf">PDF</a></td></tr>
-						<tr><td> 7	</td><td> Boolean algebra                       </td>
-							<td>
-								<a href="/courses/DigitalTechniques/2015/ch4.pdf">PDF</a>
-							</td>
-						</tr>
-						<tr><td> 8	</td><td> Canonical and standard forms          </td><td></td></tr>
-						<tr><td> 9	</td><td> Karnaugh map                          </td><td></td></tr>
-						<tr><td> 10</td><td> Arithmetic operation                   </td><td></td></tr>
-						<tr><td> 11</td><td> Code conversion                        </td><td></td></tr>
-						<tr><td> 12</td><td> Multiplexer                            </td><td></td></tr>
-						<tr><td> 13</td><td> Demultiplexer decoder                  </td><td></td></tr>
-						<tr><td> 14</td><td> Encoder                                </td><td></td></tr>
-						<tr><td> 15</td><td> Sequential logic circuit               </td><td></td></tr>
-						<tr><td> 16</td><td> Counters and shift registers           </td><td></td></tr>
-					</tbody></table>
-
+{:.table .table-striped .table-bordered .table-hover .table-condensed'}
+| Week | Date | Covered Topics                          | Comments |
+|------|------|-----------------------------------------|----------|
+| 1    | 2/10 | Introduction to Digital Techniques      |          |
+| 2    | 2/10 | Number Systems                          |          |
+| 3    | 2/10 | Numbers base conversion                 |          |
+| 4    | 2/10 | Binary Representation of signed numbers |          |
+| 5    | 2/10 | Binary arithmetic’s                     |          |
+| 6    | 2/10 | Logic Gates                             |          |
+| 7    | 2/10 | Boolean algebra                         |          |
+| 8    | 2/10 | Canonical and standard forms            |          |
+| 9    | 2/10 | Karnaugh map                            |          |
+| 10   | 2/10 | Arithmetic operation                    |          |
+| 11   | 2/10 | Code conversion                         |          |
+| 12   | 2/10 | Multiplexer                             |          |
+| 13   | 2/10 | Demultiplexer decoder                   |          |
+| 14   | 2/10 | Encoder                                 |          |
+| 15   | 2/10 | Sequential logic circuit                |          |
+| 16   | 2/10 | Counters and shift registers            |          |
