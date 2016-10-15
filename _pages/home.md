@@ -11,7 +11,7 @@ feature_row:
   - image_path: database.jpg
     alt: "Database Deigning"
     title: "Database Deign"
-    excerpt: "This course will introduce students to the basics of the Structured Query Language (SQL) as well as basic database design (Entity Model)for storing data as part of a multi-step data gathering, analysis, and processing effort."
+    excerpt: "This course will introduce students to the basics of the Structured Query Language (SQL) as well as basic database design (Entity Model) for storing data as part of a multi-step data gathering, analysis, and processing effort."
     url: "/2016-2017/Database/"
     btn_label: "Go to class"
   - image_path: Digital.jpg
