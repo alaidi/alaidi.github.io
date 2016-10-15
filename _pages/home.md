@@ -12,7 +12,7 @@ feature_row:
     alt: "Database Deigning"
     title: "Database Deign"
     excerpt: "This course will introduce students to the basics of the Structured Query Language (SQL) as well as basic database design for storing data as part of a multi-step data gathering, analysis, and processing effort."
-    url: "/2016-2017/DataBase/"
+    url: "/2016-2017/Database/"
     btn_label: "Learn More"
   - image_path: Digital.jpg
     alt: "Digital Techniques"
