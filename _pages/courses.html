@@ -1,0 +1,21 @@
+---
+layout: archive
+permalink: /courses/
+title: "Courses"
+author_profile: false
+header:
+  overlay_image: courses_banner.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+---
+{% include base_path %}
+
+{% for category in site.categories reversed %}
+   <h1 class="archive__subtitle" name="{{ category | first }}">Teaching {{ category | first }}</h1>
+   <div class="list__item">
+       {% for posts in category  %}
+       {% for post in posts %}
+       {% if post.title %}<article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork"> <h3 class="archive__item-title" itemprop="headline"><a href="{{ post.url }}" rel="permalink">{{ post.title }}</a></h3></article>{% endif %}
+       {% endfor %}
+       {% endfor %}
+   </div>
+  {% endfor %}
