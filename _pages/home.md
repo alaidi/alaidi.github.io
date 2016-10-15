@@ -5,7 +5,8 @@ feature_row:
   - image_path: network.jpg
     alt: "Computer Network"
     title: "Computer Network"
-    excerpt: "In this course, you will learn the network fundamental and the basic fundamental of IPv4. Moreover, you will learn the network model and Network Applications."
+    excerpt: "
+In this course, you will learn the network fundamental.TThis course aims to provide you with a knowledge and conceptual understanding of a range of aspects of computer networking. Moreover, you will learn the network model and Applications."
     url: "/2016-2017/Computer-Network/"
     btn_label: "Learn More"
   - image_path: database.jpg
