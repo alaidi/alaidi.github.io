@@ -5,7 +5,7 @@ feature_row:
   - image_path: network.jpg
     alt: "Computer Network"
     title: "Computer Network"
-    excerpt: "In this course, you will learn the network fundamental.This course aims to provide you with a knowledge to understanding a range of aspects of computer networking. Moreover, you will learn the network model."
+    excerpt: "In this course, you will learn the network fundamental.This course aims to provide you with a knowledge to understand a range aspects of computer networking. Moreover, you will learn the network model."
     url: "/2016-2017/Computer-Network/"
     btn_label: "Go to class"
   - image_path: database.jpg
