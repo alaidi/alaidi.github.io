@@ -15,6 +15,9 @@ header:
 > Fundamentals of Database Systems, 6th Edition, by Elmasri/Navathe, published by Addison-Wesley, 2010.
 [download][Book]
 
+<a class="btn btn--success" href="2016/DatabaseDesignFinalProject.pdf">Database Design Final Project Guideline</a>
+
+
 {:.table .table-striped .table-bordered .table-hover .table-condensed'}
 | Week | Date             | Covered Topics                                                                                                           | Comments                                                                               |
 |------|------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
