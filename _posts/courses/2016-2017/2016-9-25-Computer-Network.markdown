@@ -3,11 +3,6 @@ title: "Computer Network"
 date: 2016-09-25 00:22:02 +0300
 class: "Engendering college Wasit university Fourth stage"
 categories: 2016-2017
-author_profile: false
-read_time: false
-comments: false
-share: false
-related: false
 header:
   overlay_image: network_banner.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background

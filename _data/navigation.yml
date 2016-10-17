@@ -27,13 +27,15 @@ main:
   - title: "About"
     url: /about/
 
+  - title: "courses"
+    url: /cours/
+
 #  - title: "Sample Posts"
 #    url: /year-archive/
 
 
 # documentation links
-docs:
-  - title: Getting Started
+
 #    children:
  #     - title: "Quick-Start Guide"
   #      url: /docs/quick-start-guide/

@@ -163,10 +163,10 @@ kramdown:
 
 
 # Collections
-collections:
-  courses:
-    output: true
-    permalink: /:collection/:path/
+#collections:
+#  cours:
+#    output: true
+#    permalink: /:collection/:path/
 
 
 # Defaults
@@ -177,11 +177,11 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
   # _pages
   - scope:
       path: ""
@@ -190,17 +190,17 @@ defaults:
       layout: single
       author_profile: true
   # _docs
-  - scope:
-      path: ""
-      type: courses
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "courses"
+ # - scope:
+ #     path: ""
+ #     type: cours
+  #  values:
+ #     layout: single
+  #    read_time: false
+  #    author_profile: false
+  #    share: false
+ #     comments: false
+  #    sidebar:
+   #     nav: "cours"
  
   
 
