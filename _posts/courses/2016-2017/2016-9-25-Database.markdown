@@ -37,9 +37,9 @@ header:
 
 [Book]: http://www.uoitc.edu.iq/images/documents/informatics-institute/exam_materials/databases%20ramaz.pdf
 [ch1]: {{ site.baseurl }}/download/2016-2017/database/ch01.ppt
-[ch2]: {{ site.baseurl }}/download/2016-2017/database/ch02.ppt
-[ch3]: {{ site.baseurl }}/download/2016-2017/database/ch03.ppt
-[ch4]: {{ site.baseurl }}/download/2016-2017/database/ch04_5.ppt
-[ch7]: {{ site.baseurl }}/download/2016-2017/database/ch07.ppt
-[ch8]: {{ site.baseurl }}/download/2016-2017/database/ch08.ppt
-[ch9]: {{ site.baseurl }}/download/2016-2017/database/ch09.ppt
+[ch02]: {{ site.baseurl }}/download/2016-2017/database/ch02.ppt
+[ch03]: {{ site.baseurl }}/download/2016-2017/database/ch03.ppt
+[ch04]: {{ site.baseurl }}/download/2016-2017/database/ch04_5.ppt
+[ch07]: {{ site.baseurl }}/download/2016-2017/database/ch07.ppt
+[ch08]: {{ site.baseurl }}/download/2016-2017/database/ch08.ppt
+[ch09]: {{ site.baseurl }}/download/2016-2017/database/ch09.ppt
