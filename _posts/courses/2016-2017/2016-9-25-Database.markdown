@@ -10,6 +10,11 @@ header:
 
 {% include base_path %}
 
+# Text Book
+
+> Fundamentals of Database Systems, 6th Edition, by Elmasri/Navathe, published by Addison-Wesley, 2010.
+[download][Book]
+
 {:.table .table-striped .table-bordered .table-hover .table-condensed'}
 | Week | Date            | Covered Topics                                                                                                           | Comments                                                                                                          | 
 |------|-----------------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| 
@@ -30,5 +35,5 @@ header:
 | 15   |                 | Project presentation                                                                                                     | Project - Phase 4 (final) due on <br>Presentation Evaluation <br>Presentation Schedule                                    | 
 | 16   |                 | TBA                                                                                                                      |                                                                                                                   | 
 
-
+[Book]: http://www.uoitc.edu.iq/images/documents/informatics-institute/exam_materials/databases%20ramaz.pdf
 [ch1]: {{ site.baseurl }}/download/2016-2017/database/ch01.ppt
