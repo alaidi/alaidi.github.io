@@ -23,9 +23,9 @@ header:
 | 1    | 2/10            | **Course organization**                                                                                                  |                                                                                                                   | 
 | 2    | 16/10           | **Networking Fundamentals**: Bandwidth, Digital Versus Analog Bandwidth, Bandwidth Measurement, Bandwidth Limitation, Bandwidth Troughput and Data Transfer calculus | [Lecture 1,2,3][ch1]                                                  |
 | 3    | 23/10 <br>30/10 | Data Network, Network Devices, Network Topology, Local Area Network (LAN), Wide Area Network (WAN), Network Interconnection, Peer-to-Peer Network, Client/Server Model |       [Lecture 4,5][ch2]       | 
-| 4    | 2/11 and 9/11   | **Networking Models** : Using layers to describe data communication, OSI model, OSI layers, The Physical Layer,The Data Link Layer,The Network Layer,The Transport Layer,The Session Layer,The Presentation Layer,The Application Layer  |First Exam   | 
-| 5    | 7/12 and 14/12  | Encapsulation, Peer Layer Communication, TCP/IP Model, Data Movement Through the Protocol Stack                           |                                                                                                                  | 
-| 6    | 21/12 and 23/12 | **Network Media**: Introduction, Copper Cable Specification, Coaxial Cables, STP Cable,  Stream Control Transmission Protocol (ScTP), UTP Cable, UTP Implementation                                                  | Second Exam           | 
+| 4    | 6/11 and 9/11   | **Network Media**: Introduction, Copper Cable Specification, Coaxial Cables, STP Cable,  Stream Control Transmission Protocol (ScTP), UTP Cable, UTP Implementation                                                  |[Lecture 6][ch3]            | 
+| 5    | 2/11 and 9/11   | **Networking Models** : Using layers to describe data communication, OSI model, OSI layers, The Physical Layer,The Data Link Layer,The Network Layer,The Transport Layer,The Session Layer,The Presentation Layer,The Application Layer  |   | 
+| 6    | 7/12 and 14/12  | Encapsulation, Peer Layer Communication, TCP/IP Model, Data Movement Through the Protocol Stack                           |                                                                                                                  | 
 | 7    | 28/12 and 30/12 | Fiber-Optic, Single-Mode and Multi-Mode Fiber, Other Optical Components, Wireless Media                                   |                                                                                                                  | 
 | 8    | -/- and -/-     | MAC Address: Address details, Individual Address Block, Printed Format.                                                   | Test                                                                                                             | 
 | 9    |                 | **IP Address**: The IP (Internet Protocol) Address, Assignment of IP Address, IP Address Format, IP Address class Identification, Class A, Class B, Class C, Broadcast Address, subnet, Network and subnetworks Masks, more Sub-netting Masks| | 
@@ -39,3 +39,4 @@ header:
 
 [ch1]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch1.pdf
 [ch2]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch2.pdf
+[ch3]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch3.pdf
