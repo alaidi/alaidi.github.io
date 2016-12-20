@@ -25,7 +25,7 @@ header:
 | 3    | 23/10 <br>30/10 | Data Network, Network Devices, Network Topology, Local Area Network (LAN), Wide Area Network (WAN), Network Interconnection, Peer-to-Peer Network, Client/Server Model |       [Lecture 4,5][ch2]                                            | 
 | 4    | 6/11 and 9/11   | **Network Media**: Introduction, Copper Cable Specification, Coaxial Cables, STP Cable,  Stream Control Transmission Protocol (ScTP), UTP Cable, UTP Implementation                                                  |[Lecture 6,7][ch3]       | 
 | 7    | 23/11           | Fiber-Optic, Single-Mode and Multi-Mode Fiber, Other Optical Components, Wireless Media                                   |  First Project **Design a Network for Engineering College**                                                        | 
-| 5    | 2/11 and 9/11   | **Networking Models** : Using layers to describe data communication, OSI model, OSI layers, The Physical Layer,The Data Link Layer,The Network Layer,The Transport Layer,The Session Layer,The Presentation Layer,The Application Layer  | [Lecture 8,9][ch4]   | 
+| 5    | 2/11 and 9/11   | **Networking Models** : Using layers to describe data communication, OSI model, OSI layers, The Physical Layer,The Data Link Layer,The Network Layer,The Transport Layer,The Session Layer,The Presentation Layer,The Application Layer  | [Lecture 8,9][ch4] [Lecture 10][ch4ppt]   | 
 | 6    | 7/12 and 14/12  | Encapsulation, Peer Layer Communication, TCP/IP Model, Data Movement Through the Protocol Stack                           |                                                                                                                  | 
 | 8    | -/- and -/-     | MAC Address: Address details, Individual Address Block, Printed Format.                                                   | Test                                                                                                             | 
 | 9    |                 | **IP Address**: The IP (Internet Protocol) Address, Assignment of IP Address, IP Address Format, IP Address class Identification, Class A, Class B, Class C, Broadcast Address, subnet, Network and subnetworks Masks, more Sub-netting Masks| | 
@@ -41,3 +41,4 @@ header:
 [ch2]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch2.pdf
 [ch3]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch3.pdf
 [ch4]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch4.pdf
+[ch4ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch4.pptx
