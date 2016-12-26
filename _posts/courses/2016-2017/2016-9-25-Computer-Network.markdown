@@ -1,6 +1,6 @@
 ---
 title: "Computer Network"
-date: 2016-09-25 00:22:02 +0300
+date: 2016-12-26 00:22:02 +0300
 class: "Engendering college Wasit university Fourth stage"
 categories: 2016-2017
 header:
@@ -21,7 +21,7 @@ header:
 | Week | Date            | Covered Topics                                                                                                           | Comments                                                                                                          | 
 |------|-----------------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| 
 | 1    | 2/10            | **Course organization**                                                                                                  |                                                                                                                   | 
-| 2    | 16/10           | **Networking Fundamentals**: Bandwidth, Digital Versus Analog Bandwidth, Bandwidth Measurement, Bandwidth Limitation, Bandwidth Throughput and Data Transfer calculus | [Lecture 1,2,3][ch1]                                                  |
+| 2    | 16/10           | **Networking Fundamentals**: Bandwidth, Digital Versus Analog Bandwidth, Bandwidth Measurement, Bandwidth Limitation, Bandwidth Throughput and Data Transfer calculus | [Lecture 1,2,3][ch1] [chapter 2 ppt][ch2ppt]                                                 |
 | 3    | 23/10 <br>30/10 | Data Network, Network Devices, Network Topology, Local Area Network (LAN), Wide Area Network (WAN), Network Interconnection, Peer-to-Peer Network, Client/Server Model |       [Lecture 4,5][ch2]                                            | 
 | 4    | 6/11 and 9/11   | **Network Media**: Introduction, Copper Cable Specification, Coaxial Cables, STP Cable,  Stream Control Transmission Protocol (ScTP), UTP Cable, UTP Implementation                                                  |[Lecture 6,7][ch3]       | 
 | 7    | 23/11           | Fiber-Optic, Single-Mode and Multi-Mode Fiber, Other Optical Components, Wireless Media                                   |  First Project **Design a Network for Engineering College**                                                        | 
@@ -39,6 +39,7 @@ header:
 
 [ch1]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch1.pdf
 [ch2]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch2.pdf
+[ch2ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch2.pptx.pdf
 [ch3]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch3.pdf
 [ch4]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch4.pdf
 [ch4ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch4.pptx
