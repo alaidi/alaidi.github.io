@@ -20,6 +20,12 @@ feature_row:
     excerpt: "The course objective is to acquaint the students with the fundamentals of digital techniques in particular mathematical essential of the modern design on logical synthesis level of digital circuits and systems."
     url: "/2016-2017/Digital-Techniques/"
     btn_label: "Go to class"
+  - image_path: mm-free-feature.png
+    alt: "computer Graph"
+    title: "Computer Graph"
+    excerpt: " Learn to draw in computer."
+    url: "/2016-2017/Computer-Graph/"
+    btn_label: "Go to class"
 ---
 
 {% include feature_row id="intro" type="center" %}
