@@ -1,6 +1,6 @@
 ---
 title:  "Digital Techniques"
-date:   2016-09-25 00:22:02 +0300
+date:   2017-01-06 00:22:02 +0300
 class: "Department of Electrical Engineering - Wasit university first stage"
 categories: 2016-2017
 header:
@@ -17,21 +17,26 @@ header:
 # Syllabus
 
 {:.table .table-striped .table-bordered .table-hover .table-condensed'}
-| Week | Date | Covered Topics                          | Comments |
-|------|------|-----------------------------------------|----------|
-| 1    | 2/10 | Introduction to Digital Techniques      |          |
-| 2    | 2/10 | Number Systems                          |          |
-| 3    | 2/10 | Numbers base conversion                 |          |
-| 4    | 2/10 | Binary Representation of signed numbers |          |
-| 5    | 2/10 | Binary arithmetic’s                     |          |
-| 6    | 2/10 | Logic Gates                             |          |
-| 7    | 2/10 | Boolean algebra                         |          |
-| 8    | 2/10 | Canonical and standard forms            |          |
-| 9    | 2/10 | Karnaugh map                            |          |
-| 10   | 2/10 | Arithmetic operation                    |          |
-| 11   | 2/10 | Code conversion                         |          |
-| 12   | 2/10 | Multiplexer                             |          |
-| 13   | 2/10 | DeMultiplexer decoder                   |          |
-| 14   | 2/10 | Encoder                                 |          |
-| 15   | 2/10 | Sequential logic circuit                |          |
-| 16   | 2/10 | Counters and shift registers            |          |
+| Week | Date  | Covered Topics                          | Comments         |
+|------|-------|-----------------------------------------|------------------|
+| 1    | 24/11 | Introduction to Digital Techniques      | [chapter 1][ch1] |
+| 2    | 1/12  | Number Systems                          | [chapter 2][ch2] |
+| 3    | 8/12  | Numbers base conversion                 |                  |
+| 4    | 15/12 | Binary Representation of signed numbers |                  |
+| 5    | 2/12  | Binary arithmetic’s                     |                  |
+| 6    | 29/12 | Logic Gates                             | [chapter 3][ch3] |
+| 7    | 5/1   | Boolean algebra                         |                  |
+| 8    | 12/1  | Canonical and standard forms            |                  |
+| 9    | 19/1  | Karnaugh map                            |                  |
+| 10   | 26/1  | Arithmetic operation                    |                  |
+| 11   | 2/10  | Code conversion                         |                  |
+| 12   | 2/10  | Multiplexer                             |                  |
+| 13   | 2/10  | DeMultiplexer decoder                   |                  |
+| 14   | 2/10  | Encoder                                 |                  |
+| 15   | 2/10  | Sequential logic circuit                |                  |
+| 16   | 2/10  | Counters and shift registers            |                  |
+
+
+[ch1]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch1.pdf
+[ch2]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch2.pdf
+[ch3]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch3.pdf
