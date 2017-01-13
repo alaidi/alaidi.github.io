@@ -27,7 +27,7 @@ author_profile: false
 <!-- where the quiz result copy goes -->
 </div>
 </div>
- Go to course home page[url][digital-techniques]
+ Go to course home page [digital-techniques](/2016-2017/Digital-Techniques)
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -35,4 +35,3 @@ author_profile: false
 <script src="{{ base_path }}/assets/js/quiz/slickQuiz.js"></script>
 <script src="{{ base_path }}/assets/js/quiz/master.js"></script>
 
-[url]: {{ site.baseurl }}/2016-2017/digital-techniques/
