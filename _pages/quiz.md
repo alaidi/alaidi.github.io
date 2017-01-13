@@ -1,7 +1,7 @@
 ---
 layout: quiz
 title: "quiz"
-permalink: /quiz1/
+permalink: /Digital-Techniques/quiz1/
 author_profile: false
 ---
 <div id="main" role="main">
