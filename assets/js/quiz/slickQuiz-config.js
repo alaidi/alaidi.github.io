@@ -6,7 +6,7 @@ var quizJSON = {
     "info": {
         "name":    "Test Your Knowledge!!",
         "main":    "<p>Think you're smart enough to be on Jeopardy? Find out with this super crazy knowledge quiz!</p>",
-        "results": "<h5>Learn More</h5><p> This is the end of the test</p> Go to course home page {{ site.posts | jsonify }}",
+        "results": "<h5>Learn More</h5><p> This is the end of the test</p> Go to course home page<a href=" {{ site.baseurl }}/2016-2017/digital-techniques/" rel="permalink">digital-techniques</a> ",
         "level1":  "Ready",
         "level2":  "Contender",
         "level3":  "Amateur",
