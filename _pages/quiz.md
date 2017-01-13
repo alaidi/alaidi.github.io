@@ -27,7 +27,7 @@ author_profile: false
 <!-- where the quiz result copy goes -->
 </div>
 </div>
- Go to course home page [digital-techniques](/2016-2017/Digital-Techniques)
+ Go to course home page  <a href="http://alaidi.net/2016-2017/Digital-Techniques/">digital-techniques</a>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
