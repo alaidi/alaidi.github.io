@@ -15,7 +15,7 @@ var quizJSON = {
     },
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "Convert (0.625) to binary  ()<sub>2</sub>",
+            "q": "Convert (0.625) to binary ()<sub>2</sub>",
             "a": [
                 {"option": "0.101",      "correct": true},
                 {"option": "0.1011",     "correct": false},
