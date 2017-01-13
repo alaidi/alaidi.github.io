@@ -4,6 +4,8 @@ title: "quiz"
 permalink: /2016-2017/Digital-Techniques/quiz1
 author_profile: false
 ---
+
+{% include base_path %}
 <div id="main" role="main">
 <h1 class="quizName"><!-- where the quiz name goes --></h1>
 
@@ -25,6 +27,7 @@ author_profile: false
 <!-- where the quiz result copy goes -->
 </div>
 </div>
+ Go to course home page[url][digital-techniques]
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -32,3 +35,4 @@ author_profile: false
 <script src="{{ base_path }}/assets/js/quiz/slickQuiz.js"></script>
 <script src="{{ base_path }}/assets/js/quiz/master.js"></script>
 
+[url]: {{ site.baseurl }}/2016-2017/digital-techniques/
