@@ -1,7 +1,7 @@
 ---
 layout: quiz
 title: "quiz"
-permalink: /2016-2017/Digital-Techniques/
+permalink: /2016-2017/Digital-Techniques/quiz1
 author_profile: false
 ---
 <div id="main" role="main">
