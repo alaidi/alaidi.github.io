@@ -27,7 +27,7 @@ author_profile: false
 </div>
 </div>
 
-<script src="{{ base_path }}/assets/js/quiz/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="{{ base_path }}/assets/js/quiz/slickQuiz-config.js"></script>
 <script src="{{ base_path }}/assets/js/quiz/slickQuiz.js"></script>
 <script src="{{ base_path }}/assets/js/quiz/master.js"></script>
