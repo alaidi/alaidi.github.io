@@ -14,6 +14,8 @@ header:
  * Computer System Architecture Third Edition M. Morris Mano
  * Digital Fundamentals  Tenth Edition   FLOYD
 
+[Quiz 1](/2016-2017/Digital-Techniques/quiz1)
+
 # Syllabus
 
 {:.table .table-striped .table-bordered .table-hover .table-condensed'}
