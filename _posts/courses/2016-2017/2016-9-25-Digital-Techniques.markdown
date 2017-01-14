@@ -15,6 +15,7 @@ header:
  * Digital Fundamentals  Tenth Edition   FLOYD
 
 [Quiz 1](/2016-2017/Digital-Techniques/quiz1)
+
 [Quiz 2](/2016-2017/Digital-Techniques/quiz2)
 
 # Syllabus
