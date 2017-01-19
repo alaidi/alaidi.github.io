@@ -1,6 +1,6 @@
 ---
 title:  "Digital Techniques"
-date:   2017-01-06 00:22:02 +0300
+date:   2017-01-19 00:22:02 +0300
 class: "Department of Electrical Engineering - Wasit university first stage"
 categories: 2016-2017
 header:
@@ -29,7 +29,7 @@ header:
 | 4    | 15/12 | Binary Representation of signed numbers |                  |
 | 5    | 2/12  | Binary arithmetic’s                     |                  |
 | 6    | 29/12 | Logic Gates                             | [chapter 3][ch3] |
-| 7    | 5/1   | Boolean algebra                         |                  |
+| 7    | 5/1   | Boolean algebra                         | [chapter 4][ch4] |
 | 8    | 12/1  | Canonical and standard forms            |                  |
 | 9    | 19/1  | Karnaugh map                            |                  |
 | 10   | 26/1  | Arithmetic operation                    |                  |
@@ -44,3 +44,4 @@ header:
 [ch1]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch1.pdf
 [ch2]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch2.pdf
 [ch3]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch3.pdf
+[ch4]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch4.pdf
