@@ -1,6 +1,6 @@
 ---
 title: "Computer Network"
-date: 2016-12-26 00:22:02 +0300
+date: 2017-03-17 00:22:02 +0300
 class: "Engendering college Wasit university Fourth stage"
 categories: 2016-2017
 header:
@@ -28,7 +28,7 @@ header:
 | 5    | 2/11 and 9/11   | **Networking Models** : Using layers to describe data communication, OSI model, OSI layers, The Physical Layer,The Data Link Layer,The Network Layer,The Transport Layer,The Session Layer,The Presentation Layer,The Application Layer  | [Lecture 8,9][ch4] [Lecture 10][ch4ppt]   | 
 | 6    | 7/12 and 14/12  | Encapsulation, Peer Layer Communication, TCP/IP Model, Data Movement Through the Protocol Stack                           |                                                                                                                  | 
 | 8    | -/- and -/-     | MAC Address: Address details, Individual Address Block, Printed Format.                                                   | [Test 1][test1] [test 1 solution][test1Sol]                                                                                                            | 
-| 9    |                 | **IP Address**: The IP (Internet Protocol) Address, Assignment of IP Address, IP Address Format, IP Address class Identification, Class A, Class B, Class C, Broadcast Address, subnet, Network and subnetworks Masks, more Sub-netting Masks| [Lecture 10][ch5] | 
+| 9    |                 | **IP Address**: The IP (Internet Protocol) Address, Assignment of IP Address, IP Address Format, IP Address class Identification, Class A, Class B, Class C, Broadcast Address, subnet, Network and subnetworks Masks, more Sub-netting Masks| [Lecture 10,11][ch5] | 
 | 10   | 7/3             | Public and Private IP Addresses, IPv4 Versus IPv6, Obtaining and Internet Address, Static Assignment of an Ip Address, APRP IP Address Assignment, BOOTP IP Address Assignment, DHCP IP Address management,                               |  | 
 | 11   | 14/3            | Problems in Address Resolution, Address Resolution Protocol (ARP), Routing, Routing information Protocol (RIP), Interior Gateway Routing Protocols(IGRP) , Open Shortest Path First (OSPF)|    | 
 | 12   | 21/3            | **Transport Layer**: The Purpose of the Transport Layer, Duties (Primary Function) of the Transport Layer, Transport Layer Connection, The OSI Transport layer Protocol, The TCP/IP Transport Layer Protocol, Port addressing |              | 
