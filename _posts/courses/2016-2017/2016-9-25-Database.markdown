@@ -45,5 +45,5 @@ header:
 [ch04]: {{ site.baseurl }}/download/2016-2017/database/ch04_5.ppt
 [ch07]: {{ site.baseurl }}/download/2016-2017/database/ch07.ppt
 [ch08]: {{ site.baseurl }}/download/2016-2017/database/ch08.ppt
-[ch09]: {{ site.baseurl }}/download/2016-2017/database/ch09.ppt
-[company]: {{ site.baseurl }}/download/2016-2017/database/company.sql.zip
+[ch09]: {{ site.baseurl }}/download/2016-2017/database/ch09.pptx
+[company]: {{ site.baseurl }}/download/2016-2017/database/company.sql
