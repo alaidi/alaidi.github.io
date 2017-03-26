@@ -31,7 +31,7 @@ header:
 | 8    | -/- and -/-      | Mid-term Exam                                                                                                            | Mid-term: Chapter 1,2,3,7,8,9,13                                                       |
 | 9    |                  | Chapter 6 : Relational algebra and Relational calculus                                                                   |                                                                                        |
 | 10   | 7/3              | Chapter 4&5 : The SQL database language 1.                                                                               | [Chapter 4&5][ch04_5]                                                                  |
-| 11   | 14/3             | Chapter 4&5 : The SQL database language 2.                                                                               |                                                                                        |
+| 11   | 14/3             | Chapter 4&5 : The SQL database language 2.                                                                               |  [company sql][company]                                                                                    |
 | 12   | 21/3             | Chapter 13 : Database programming techniques.                                                                            | Lab Exam on 16/3 Project <br> Phase 3 due on                                           |
 | 13   | 28/3 and 4/4     | Chapter 17 : Disk Storage, Basic File Structures and Hashing Chapter 18 : Indexing Structures for Files                  | Third Exam on 30/3                                                                     |
 | 14   | 11/4 and 18/4    | Chapter 18 : Indexing Structures for Files                                                                               |                                                                                        |
@@ -46,3 +46,4 @@ header:
 [ch07]: {{ site.baseurl }}/download/2016-2017/database/ch07.ppt
 [ch08]: {{ site.baseurl }}/download/2016-2017/database/ch08.ppt
 [ch09]: {{ site.baseurl }}/download/2016-2017/database/ch09.ppt
+[company]: {{ site.baseurl }}/download/2016-2017/database/company.sql.zip
