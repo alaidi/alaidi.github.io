@@ -1,6 +1,6 @@
 ---
 title:  "Database Design"
-date:   2017-03-17 00:22:02 +0300
+date:   2017-04-11 00:22:02 +0300
 class: "Department of Computer Science Education college - Wasit university Second stage"
 categories: 2016-2017
 header:
@@ -30,8 +30,8 @@ header:
 | 7    | 28/12 and 30/12  | Chapter 15 : Functional dependencies, and normalization.                                                                 | Project - Phase 2 due on 28/12                                                         |
 | 8    | -/- and -/-      | Mid-term Exam                                                                                                            | Mid-term: Chapter 1,2,3,7,8,9,13                                                       |
 | 9    |                  | Chapter 6 : Relational algebra and Relational calculus                                                                   |                                                                                        |
-| 10   | 7/3              | Chapter 4&5 : The SQL database language 1.                                                                               | [Chapter 4&5][ch04]                                                                  |
-| 11   | 14/3             | Chapter 4&5 : The SQL database language 2.                                                                               |  [company sql][company]                                                                                    |
+| 10   | 7/3              | Chapter 4&5 : The SQL database language 1.                                                                               | [Chapter 4&5][ch04]                                                                    |
+| 11   | 14/3             | Chapter 4&5 : The SQL database language 2.                                                                               |  [company sql][company] [SQL Joins][SQLJoins]                                                               |
 | 12   | 21/3             | Chapter 13 : Database programming techniques.                                                                            | Lab Exam on 16/3 Project <br> Phase 3 due on                                           |
 | 13   | 28/3 and 4/4     | Chapter 17 : Disk Storage, Basic File Structures and Hashing Chapter 18 : Indexing Structures for Files                  | Third Exam on 30/3                                                                     |
 | 14   | 11/4 and 18/4    | Chapter 18 : Indexing Structures for Files                                                                               |                                                                                        |
@@ -47,3 +47,4 @@ header:
 [ch08]: {{ site.baseurl }}/download/2016-2017/database/ch08.ppt
 [ch09]: {{ site.baseurl }}/download/2016-2017/database/ch09.pptx
 [company]: {{ site.baseurl }}/download/2016-2017/database/company.sql
+[SQLJoins]: {{ site.baseurl }}/download/2016-2017/database/SQLJoins.pdf
