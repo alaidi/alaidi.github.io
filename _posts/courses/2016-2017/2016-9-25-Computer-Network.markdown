@@ -1,6 +1,6 @@
 ---
 title: "Computer Network"
-date: 2017-03-17 00:22:02 +0300
+date: 2017-04-19 00:22:02 +0300
 class: "Engendering college Wasit university Fourth stage"
 categories: 2016-2017
 header:
@@ -29,7 +29,7 @@ header:
 | 6    | 7/12 and 14/12  | Encapsulation, Peer Layer Communication, TCP/IP Model, Data Movement Through the Protocol Stack                           |                                                                                                                  | 
 | 8    | -/- and -/-     | MAC Address: Address details, Individual Address Block, Printed Format.                                                   | [Test 1][test1] [test 1 solution][test1Sol]                                                                                                            | 
 | 9    |    7/3 and 13/3     | **IP Address**: The IP (Internet Protocol) Address, Assignment of IP Address, IP Address Format, IP Address class Identification, Class A, Class B, Class C, Broadcast Address, subnet, Network and subnetworks Masks, more Sub-netting Masks| [Lecture 10,11][ch5] | 
-| 10   | 21/3             | Public and Private IP Addresses, IPv4 Versus IPv6, Obtaining and Internet Address, Static Assignment of an Ip Address, APRP IP Address Assignment, BOOTP IP Address Assignment, DHCP IP Address management   |  [chapter 6][ch6]| 
+| 10   | 21/3             | Public and Private IP Addresses, IPv4 Versus IPv6, Obtaining and Internet Address, Static Assignment of an Ip Address, APRP IP Address Assignment, BOOTP IP Address Assignment, DHCP IP Address management   |  [chapter 6][ch6] [chapter 6 ppt][ch6ppt+0]| 
 | 11   | 28/3            | Problems in Address Resolution, Address Resolution Protocol (ARP), Routing, Routing information Protocol (RIP), Interior Gateway Routing Protocols(IGRP) , Open Shortest Path First (OSPF)|    | 
 | 12   | 21/3            | **Transport Layer**: The Purpose of the Transport Layer, Duties (Primary Function) of the Transport Layer, Transport Layer Connection, The OSI Transport layer Protocol, The TCP/IP Transport Layer Protocol, Port addressing |              | 
 | 13   |  4/4    | Summary, Transport Layer functions , Application and Operation of TCP mechanisms, Managing TCP Sessions, Confirming Receipt of Segments, Flow Control, Managing TCP Sessions, UDP Protocol| Third Exam on 30/3                               | 
@@ -47,3 +47,4 @@ header:
 [test1]: {{ site.baseurl }}/download/2016-2017/Computer-network/Test1.pdf
 [test1Sol]: {{ site.baseurl }}/download/2016-2017/Computer-network/Test1Sol.pdf
 [ch4ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch4.pptx
+[ch6ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/chapter6.ppt
