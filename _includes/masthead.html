@@ -7,17 +7,34 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% for link in site.data.navigation.main %} {% if link.url contains 'http' %} {% assign domain = '' %} {% else %} {% assign
+          domain = base_path %} {% endif %}
+          <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item"><gcse:search></gcse:search></li>
+          <li class="masthead__menu-item">
+            <gcse:search></gcse:search>
+            <style type="text/css">
+              body {
+                margin: 10px;
+              }
+              
+              #gsc-iw-id1 {
+                height: 30px;
+                border-color: #898989;
+              }
+              
+              input.gsc-search-button-v2 {
+                width: 71px;
+                height: 29px;
+              }
+            </style>
+          </li>
+          <li>
+
+
+          </li>
         </ul>
-       
+
 
         <ul class="hidden-links hidden"></ul>
       </nav>
