@@ -16,6 +16,7 @@ header:
 [download][Book]
 
 <a class="btn btn--success" href="2016/DatabaseDesignFinalProject.pdf">Database Design Final Project Guideline</a>
+<a class="btn btn--info" href="/compaysql">Company database Online </a>
 
 
 {:.table .table-striped .table-bordered .table-hover .table-condensed'}
