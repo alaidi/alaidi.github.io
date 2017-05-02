@@ -31,7 +31,7 @@ header:
 | 9    |    7/3 and 13/3     | **IP Address**: The IP (Internet Protocol) Address, Assignment of IP Address, IP Address Format, IP Address class Identification, Class A, Class B, Class C, Broadcast Address, subnet, Network and subnetworks Masks, more Sub-netting Masks| [Lecture 10,11][ch5] | 
 | 10   | 21/3             | Public and Private IP Addresses, IPv4 Versus IPv6, Obtaining and Internet Address, Static Assignment of an Ip Address, APRP IP Address Assignment, BOOTP IP Address Assignment, DHCP IP Address management   |  [chapter 6][ch6] [chapter 6 ppt][ch6ppt]| 
 | 11   | 28/3            | Problems in Address Resolution, Address Resolution Protocol (ARP), Routing, Routing information Protocol (RIP), Interior Gateway Routing Protocols(IGRP) , Open Shortest Path First (OSPF)|    | 
-| 12   | 21/3            | **Transport Layer**: The Purpose of the Transport Layer, Duties (Primary Function) of the Transport Layer, Transport Layer Connection, The OSI Transport layer Protocol, The TCP/IP Transport Layer Protocol, Port addressing |              | 
+| 12   | 21/3            | **Transport Layer**: The Purpose of the Transport Layer, Duties (Primary Function) of the Transport Layer, Transport Layer Connection, The OSI Transport layer Protocol, The TCP/IP Transport Layer Protocol, Port addressing |  [chapter 7][ch7ppt]            | 
 | 13   |  4/4    | Summary, Transport Layer functions , Application and Operation of TCP mechanisms, Managing TCP Sessions, Confirming Receipt of Segments, Flow Control, Managing TCP Sessions, UDP Protocol| Third Exam on 30/3                               | 
 | 14   | 11/4 and 18/4   | **Network Applications**: Using The Internet, Understanding the World Wide Web, Recognizing Web Page Elements, Using the Uniform Resource Locater (URL) Identifying Other Elements |                                                         |
 | 15   |                 | presentation                                                                                                             | Presentation Evaluation <br>Presentation Schedule                                                                 | 
@@ -48,3 +48,4 @@ header:
 [test1Sol]: {{ site.baseurl }}/download/2016-2017/Computer-network/Test1Sol.pdf
 [ch4ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch4.pptx
 [ch6ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/chapter6.ppt
+[ch7ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch7.pptx
