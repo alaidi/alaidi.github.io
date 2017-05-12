@@ -17,6 +17,7 @@ header:
 
 <a class="btn btn--success" href="2016/DatabaseDesignFinalProject.pdf">Database Design Final Project Guideline</a>
 <a class="btn btn--info" href="/compaysql">Company database Online </a>
+<a class="btn btn-warning" href="/download/2016-2017/database/ProjectReportExample.pdf">Project Report Example</a>
 
 
 {:.table .table-striped .table-bordered .table-hover .table-condensed'}
