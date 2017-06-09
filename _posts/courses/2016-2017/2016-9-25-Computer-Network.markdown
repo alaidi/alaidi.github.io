@@ -35,7 +35,7 @@ header:
 | 13   |  4/4    | Summary, Transport Layer functions , Application and Operation of TCP mechanisms, Managing TCP Sessions, Confirming Receipt of Segments, Flow Control, Managing TCP Sessions, UDP Protocol| Third Exam on 30/3                               | 
 | 14   | 11/4 and 18/4   | **Network Applications**: Using The Internet, Understanding the World Wide Web, Recognizing Web Page Elements, Using the Uniform Resource Locater (URL) Identifying Other Elements |                                                         |
 | 15   |                 | presentation                                                                                                             | Presentation Evaluation <br>Presentation Schedule                                                                 | 
-| 16   |                 |  [all Test][allTest]                                                                                                                        |                                                                                                                   | 
+| 16   |                 |  [All Quizzes][allTest]                                                                                                                        |                                                                                                                   | 
 
 [ch1]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch1.pdf
 [ch2]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch2.pdf
