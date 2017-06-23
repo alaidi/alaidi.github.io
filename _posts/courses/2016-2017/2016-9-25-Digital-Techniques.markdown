@@ -38,7 +38,7 @@ header:
 | 13   | 2/10  | DeMultiplexer decoder                   |                       |
 | 14   | 2/10  | Encoder                                 |                       |
 | 15   | 2/10  | Sequential logic circuit                |                       |
-| 16   | 2/10  | Counters and shift registers            | [Registers][register] |
+| 16   | 2/10  | Counters and shift registers            | [Flip Flop][flipflop][Registers][register] |
 
 <a class="btn btn--success" href="/download/2016-2017/digital-techniques/final.pdf">Final Exam</a>
 
@@ -49,3 +49,4 @@ header:
 [ch4]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch4.pdf
 [register]: {{ site.baseurl }}/download/2016-2017/digital-techniques/register.pdf
 [final]: {{ site.baseurl }}/download/2016-2017/digital-techniques/final.pdf
+[flipflop]: {{ site.baseurl }}/download/2016-2017/digital-techniques/flipflop.pdf
