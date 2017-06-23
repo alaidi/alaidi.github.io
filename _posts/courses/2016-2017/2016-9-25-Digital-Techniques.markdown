@@ -40,6 +40,7 @@ header:
 | 15   | 2/10  | Sequential logic circuit                |                       |
 | 16   | 2/10  | Counters and shift registers            | [Registers][register] |
 
+<a class="btn btn--success" href="/download/2016-2017/digital-techniques/final.pdf">Final Exam</a>
 
 
 [ch1]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch1.pdf
@@ -47,3 +48,4 @@ header:
 [ch3]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch3.pdf
 [ch4]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch4.pdf
 [register]: {{ site.baseurl }}/download/2016-2017/digital-techniques/register.pdf
+[final]: {{ site.baseurl }}/download/2016-2017/digital-techniques/final.pdf
