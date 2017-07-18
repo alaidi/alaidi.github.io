@@ -37,8 +37,8 @@ header:
 | 15   |                 | presentation                                                                                                             | Presentation Evaluation <br>Presentation Schedule                                                                 | 
 | 16   |                 |  [All Quizzes][allTest]                                                                                                                        |                                                                                                                   | 
 
-{:.btn .btn--success}
-[Final Test Solution][FinalTestSolution]
+
+[Final Test Solution][FinalTestSolution]{:.btn .btn--success}
 
 
 [ch1]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch1.pdf
