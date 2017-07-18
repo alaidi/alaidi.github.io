@@ -37,6 +37,10 @@ header:
 | 15   |                 | presentation                                                                                                             | Presentation Evaluation <br>Presentation Schedule                                                                 | 
 | 16   |                 |  [All Quizzes][allTest]                                                                                                                        |                                                                                                                   | 
 
+{:.btn btn--success}
+[Final Test Solution][FinalTestSolution]
+
+
 [ch1]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch1.pdf
 [ch2]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch2.pdf
 [ch2ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch2.pptx.pdf
@@ -50,3 +54,4 @@ header:
 [ch6ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/chapter6.ppt
 [ch7ppt]: {{ site.baseurl }}/download/2016-2017/Computer-network/ch7.pptx
 [allTest]: {{ site.baseurl }}/download/2016-2017/Computer-network/All_tests.pdf
+[FinalTestSolution]: {{ site.baseurl }}/download/2016-2017/Computer-network/Final2016-2017_Sol.pdf

@@ -41,7 +41,8 @@ header:
 | 16   | 2/10  | Counters and shift registers            | [Flip Flop][flipflop][Registers][register] |
 
 <a class="btn btn--success" href="/download/2016-2017/digital-techniques/final.pdf">Final Exam</a>
-
+{:.btn btn--success}
+[Final Test Solution][FinalTestSolution]
 
 [ch1]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch1.pdf
 [ch2]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch2.pdf
@@ -50,3 +51,4 @@ header:
 [register]: {{ site.baseurl }}/download/2016-2017/digital-techniques/register.pdf
 [final]: {{ site.baseurl }}/download/2016-2017/digital-techniques/final.pdf
 [flipflop]: {{ site.baseurl }}/download/2016-2017/digital-techniques/flipflop.pdf
+[FinalTestSolution]: {{ site.baseurl }}/download/2016-2017/digital-techniques/Final_2016-2017_Sol.pdf
