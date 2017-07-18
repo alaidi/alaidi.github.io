@@ -37,7 +37,7 @@ header:
 | 15   |                 | presentation                                                                                                             | Presentation Evaluation <br>Presentation Schedule                                                                 | 
 | 16   |                 |  [All Quizzes][allTest]                                                                                                                        |                                                                                                                   | 
 
-{:.btn btn--success}
+{:.btn .btn--success}
 [Final Test Solution][FinalTestSolution]
 
 
