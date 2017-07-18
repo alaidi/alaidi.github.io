@@ -40,11 +40,11 @@ header:
 | 15   | 2/10  | Sequential logic circuit                |                       |
 | 16   | 2/10  | Counters and shift registers            | [Flip Flop][flipflop][Registers][register] |
 
-{:.btn .btn--success}
-[Final Exam][final]
 
-{:.btn .btn--success}
-[Final Test Solution][FinalTestSolution]
+[Final Exam][final]{:.btn .btn--success}
+
+
+[Final Test Solution][FinalTestSolution]{:.btn .btn--success}
 
 [ch1]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch1.pdf
 [ch2]: {{ site.baseurl }}/download/2016-2017/digital-techniques/ch2.pdf
