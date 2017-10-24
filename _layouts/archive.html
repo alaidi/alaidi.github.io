@@ -11,14 +11,13 @@ layout: default
     {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
-
+<div class="container">
 <div id="main" role="main">
-  {% include sidebar.html %}
 
-  <div class="archive">
+  <div>
     {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ page.title }}</h1>
+      <h3>{{ page.title }}</h3>
     {% endunless %}
     {{ content }}
   </div>
-</div>
+</div></div>

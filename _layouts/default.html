@@ -1,47 +1,21 @@
----
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-{% include base_path %}
+  {% include head.html %}
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+  <body>
+      {% include browser-upgrade.html %}
+      {% include masthead.html %}
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-<!-- Google Tag Manager (noscript) -->
-<script>
-  (function() {
-    var cx = '002495078994964324690:baxgyphtt8i';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG5XCKC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div align="center" style="margin: 1em 0;">
+    {% include header.html %}
 
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
+        {{ content }}
 
-    {% include scripts.html %}
+    {% include footer.html %}
+
+    {% include script.html %}
 
   </body>
+
 </html>

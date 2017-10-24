@@ -2,10 +2,10 @@
 crossorigin="anonymous"></script>
 
 
-<div id="main">
+<div id="main" class="container">
 <div class="notice--info">
 <section class="page__content">
-        
+
 <aside class=""><div class="col-md-4">
 <div id="errorMsg">
 </div>
@@ -242,7 +242,7 @@ window.alert("Error 4: " + err.message);
 }
 });
 };
-// dosent working in sqlite 
+// dosent working in sqlite
 this.comInitdAddForgenKey = function () {
 comDatabase.transaction(function (tx) {
 tx.executeSql("ALTER TABLE employee ADD CONSTRAINT fk_child_parent FOREIGN KEY(DNO) REFERENCES department(DNUMBER);", [], function (tx) {
