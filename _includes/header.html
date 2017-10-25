@@ -9,7 +9,8 @@
                 domain = base_path %} {% endif %}
                           <li><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
                 {% endfor %}
-                <div class="gcse-search-wrapper"></div>
+                <div styling-function="removePlaceholder"
+                id="searchForm" class="gcse-search-wrapper"></div>
                 <div class="gcse-results-wrapper"></div>
 <script>
 var config = {
@@ -18,7 +19,21 @@ var config = {
   searchWrapperClass: 'gcse-search-wrapper',
   resultsWrapperClass: 'gcse-results-wrapper'
 };
+var removePlaceholder = function(div) {
+  var inputField = div.querySelector("input.gsc-input");
 
+  // Change the placeholder
+  inputField.placeholder = "Search SitePoint";
+
+  // Remove the background
+  inputField.style.background = "none";
+
+  // The background will get re-attached on blur, so add an event that will also remove it on blur
+  // Another way to do this would be to de-attach the element from the DOM and then re-attach again, hence wiping the listeners
+  inputField.addEventListener("blur", function() {
+    inputField.style.background = "none";
+  });
+};
 var renderSearchForms = function () {
   if (document.readyState == 'complete') {
     queryAndRender();
