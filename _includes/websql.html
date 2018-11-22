@@ -1,0 +1,395 @@
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+crossorigin="anonymous"></script>
+
+
+<div id="main" class="container">
+<div class="notice--info">
+<section class="page__content">
+
+<aside class=""><div class="col-md-4">
+<div id="errorMsg">
+</div>
+<div id="yourDB">
+</div>
+<button title="Restore the database back to its original content" id="restoreDBBtn" class="btn btn--success" type="button"
+onclick="comWebSQL1.comClearDatabase()" style="display: inline;">Restore Database</button>
+</div>
+</aside>
+<div class="row">
+<div class="col-md-8">
+<p>Type the query and click Run Query </p>
+<p> <textarea class="form-control" id="where" name="where" rows="3">SELECT * FROM employee</textarea></p>
+<p><input type="button" id="show-me" class="btn btn-success" value="Run Query »" onclick="comSQLSubmit()"
+/></p>
+</div>
+
+</div></section>
+</div>
+
+<div id="divResultSQL">
+</div>
+<div class="row marketing">
+<div class="col-lg-12 col-md-12">
+<table id="tbl" class="table table-bordered table-striped">
+<!-- set by updatePage() -->
+</table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var comDatabase;
+function comWebSQLInit() {
+var comDBObj = this;
+
+comDatabase = window.openDatabase('company', '1.0', 'company', 2 * 1024 * 1024);
+function comDropTable(tablename) {
+var sql = "DROP TABLE [" + tablename + "]";
+comDatabase.transaction(function (tx) {
+tx.executeSql(sql, []);
+}, function (err) {
+window.alert("Error cant drop table : " + err.message);
+});
+}
+
+function checkDBChanges(x) {
+if (
+x.toUpperCase().indexOf("INSERT INTO ") > -1 ||
+x.toUpperCase().indexOf("UPDATE ") > -1 ||
+x.toUpperCase().indexOf("DELETE ") > -1 ||
+x.toUpperCase().indexOf("ALTER TABLE ") > -1 ||
+x.toUpperCase().indexOf("DROP TABLE ") > -1 ||
+x.toUpperCase().indexOf("INTO ") > -1 ||
+x.toUpperCase().indexOf("CREATE TABLE ") > -1 ||
+x.toUpperCase().indexOf("ALTER TABLE ") > -1 ||
+x.toUpperCase().indexOf("CREATE VIEW ") > -1 ||
+x.toUpperCase().indexOf("REPLACE VIEW ") > -1 ||
+x.toUpperCase().indexOf("DROP VIEW ") > -1 ||
+(x.toUpperCase().indexOf("CREATE INDEX") > -1) ||
+(x.toUpperCase().indexOf("CREATE UNIQUE INDEX") > -1) ||
+(x.toUpperCase().indexOf("DROP INDEX") > -1)
+) {
+return true;
+}
+return false;
+}
+this.comExecuteSQL = function (sql) {
+var resultContainer;
+resultContainer = document.getElementById("divResultSQL");
+resultContainer.innerHTML = "";
+comDatabase.transaction(function (tx) {
+tx.executeSql(sql, [], function (tx, results) {
+var len = results.rows.length, i, j, m, txt, columns = [], DBChanges = 0;
+if (len > 0) {
+txt = "";
+txt = txt + "<div style='padding:10px;'><div class='notice--success fade in'>Number of Records: " + len + "</div>";
+txt = txt + "<table class='table table-bordered table-striped'><tr>";
+for (m in results.rows.item(0)) {
+columns.push(m);
+}
+for (j = 0; j < columns.length; j++) {
+txt = txt + "<th>" + columns[j] + "</th>";
+}
+txt = txt + "</tr>";
+for (i = 0; i < len; i++) {
+txt = txt + "<tr>";
+for (j = 0; j < columns.length; j++) {
+if (results.rows.item(i)[columns[j]] == null) {
+txt = txt + "<td><i>null</i></td>";
+} else {
+txt = txt + "<td>" + results.rows.item(i)[columns[j]] + "</td>";
+}
+}
+txt = txt + "</tr>";
+}
+resultContainer.innerHTML = txt + "</table></div>";
+} else {
+DBChanges = checkDBChanges(sql);
+if (DBChanges === true) {
+txt = "<div class='notice--danger'>You have made changes to the database.";
+if (results.rowsAffected > 0) { txt = txt + " Rows affected: " + results.rowsAffected; }
+resultContainer.innerHTML = txt + "</div>";
+} else {
+txt = "<div style='padding:10px;'>No result.</div>";
+resultContainer.innerHTML = txt;
+}
+}
+comDBObj.myDatabase();
+});
+}, function (err) {
+window.alert("Error 1: " + err.message);
+});
+};
+this.selectStar = function (tablename) {
+var sql = "SELECT * FROM [" + tablename + "]";
+document.getElementById("where").value = sql;
+if (window.editor) {
+window.editor.getDoc().setValue(sql);
+}
+comDBObj.comExecuteSQL(sql);
+};
+this.myDatabase = function () {
+comDatabase.transaction(function (tx) {
+var tblnames = [], recordcounts = [];
+document.getElementById("yourDB").innerHTML = "";
+function comDBInfo() {
+var txt = "", i;
+txt = txt + "<table class='table table-bordered table-striped'><tr><th>Table Name</th><th>Records Number</th></tr>";
+for (i = 0; i < tblnames.length; i++) {
+txt = txt + "<tr>";
+txt = txt + "<td title='Click to see the content of the " + tblnames[i] + " table'  onclick='comWebSQL1.selectStar(\"" + tblnames[i] + "\")'>" + tblnames[i] + "</td>";
+txt = txt + "<td>" + recordcounts[i] + "</td>";
+txt = txt + "</tr>";
+}
+document.getElementById("yourDB").innerHTML = txt + "</table>";
+}
+function makeRecordcountsArray(x) {
+var i, lastTable = false;
+for (i = 0; i < x.length; i++) {
+if (i === (x.length - 1)) { lastTable = true; }
+tx.executeSql("SELECT count(*) AS rc,'" + lastTable + "' AS i FROM [" + x[i] + "]", [], function (tx, results) {
+var len = results.rows.length, k, cc = "";
+if (len > 0) {
+for (k = 0; k < len; k++) {
+recordcounts.push(results.rows.item(k).rc);
+cc = results.rows.item(k).i;
+}
+if (cc === "true") {
+comDBInfo();
+}
+} else {
+window.alert("ERROR 4");
+}
+});
+}
+}
+
+tx.executeSql("SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name NOT LIKE '__WebKitDatabaseInfoTable__'", [], function (tx, results) {
+var len = results.rows.length, i;
+if (len > 0) {
+for (i = 0; i < len; i++) {
+tblnames.push(results.rows.item(i).tbl_name);
+}
+makeRecordcountsArray(tblnames);
+}
+});
+}, function (err) {
+window.alert("ERROR 2.5" + err.message);
+});
+};
+this.comInitDatabase = function (n) {
+comDBObj.comInitEmployee();
+comDBObj.comInitdDpartment();
+//comDBObj.comInitdAddForgenKey();
+comDBObj.comInitDept_locations();
+comDBObj.comInitDEPENDENT();
+comDBObj.comInitPROJECT();
+comDBObj.comInitWORKS_ON();
+};
+this.comClearDatabase = function () {
+var warn = window.confirm("This action will restore the database back to its original content.\n\nAre you sure you want to continue?");
+if (warn === false) {
+return false;
+}
+document.getElementById("divResultSQL").innerHTML = "";
+if (comDatabase) {
+comDatabase.transaction(function (tx) {
+tx.executeSql("SELECT name FROM sqlite_master WHERE type='table' AND name<>'sqlite_sequence' AND name<>'__WebKitDatabaseInfoTable__'", [], function (tx, results) {
+var len = results.rows.length, i;
+if (len > 0) {
+for (i = 0; i < len; i++) {
+comDropTable(results.rows.item(i).name);
+if (i === (len - 1)) { comDBObj.comInitDatabase(1); }
+}
+} else {
+comDBObj.comInitDatabase(1);
+}
+});
+}, function (err) {
+window.alert("Error 2: " + err.message);
+});
+}
+};
+this.comInitEmployee = function () {
+comDatabase.transaction(function (tx) {
+tx.executeSql("CREATE TABLE IF NOT EXISTS employee (FNAME      nvarchar(8), MINIT       nvarchar(2),LNAME     nvarchar(8), SSN    nvarchar(9) NOT NULL, BDATE       DATE,ADDRESS    nvarchar(27),SEX       nvarchar(1),SALARY numeric(7) NOT NULL,SUPERSSN    nvarchar(9),DNO   numeric(1) NOT NULL,PRIMARY KEY (SSN),FOREIGN KEY (SUPERSSN) REFERENCES EMPLOYEE(SSN));", [], function (tx) {
+tx.executeSql("INSERT INTO employee VALUES ('AHMAD','V','JABBAR','987987987','29-MAR-59','980 DALLAS, HOUSTON, TX','M',25000,'987654321',4);");
+tx.executeSql("INSERT INTO employee VALUES ('JAMES','E','BORG','888665555','10-NOV-27','450 STONE, HOUSTON, TX','M',55000,null,1);");
+tx.executeSql("INSERT INTO employee VALUES ('FRANKLIN','T','WONG','333445555','08-DEC-45','638 VOSS,HOUSTON TX','M',40000,'888665555',5);");
+tx.executeSql("INSERT INTO employee VALUES ('JENNIFER','S','WALLACE','987654321','20-JUN-31','291 BERRY, BELLAIRE, TX','F',43000,'888665555',4);");
+tx.executeSql("INSERT INTO employee VALUES ('JOHN','B','SMITH','123456789','09-JAN-55','731 FONDREN, HOUSTON, TX','M',30000,'333445555',5);");
+tx.executeSql("INSERT INTO employee VALUES ('RAMESH','K','NARAYAN','666884444','15-SEP-52','975 FIRE OAK, HUMBLE, TX','M',38000,'333445555',5);");
+tx.executeSql("INSERT INTO employee VALUES ('JOYCE','A','ENGLISH','453453453','31-JUL-62','5631 RICE, HOUSTON, TX','F',25000,'333445555',5);");
+tx.executeSql("INSERT INTO employee VALUES ('ALICIA','J','ZELAYA','999887777','19-JUL-58','3321 CASTLE, SPRING, TX','F',25000,'987654321',4);");
+});
+}
+, function (err) {
+if (err.message.indexOf("employee already exists") === -1) {
+window.alert("Error 3: " + err.message);
+}
+}
+);
+};
+this.comInitdDpartment = function () {
+comDatabase.transaction(function (tx) {
+tx.executeSql("CREATE TABLE IF NOT EXISTS department (DNUMBER  numeric(1),DNAME nvarchar(15),MGRSSN   nvarchar(9),MGRSTARTDATE DATE, PRIMARY KEY(DNUMBER),UNIQUE(DNAME),FOREIGN KEY(MGRSSN)REFERENCES EMPLOYEE(SSN));", [], function (tx) {
+tx.executeSql("INSERT INTO department VALUES (5,'RESEARCH','333445555','22-MAY-78');");
+tx.executeSql("INSERT INTO department VALUES (4,'ADMINISTRATION','987654321','01-JAN-85');");
+tx.executeSql("INSERT INTO department VALUES (1,'HEADQUARTERS','888665555','19-JUN-71');");
+});
+}, function (err) {
+if (err.message.indexOf("department already exists") === -1) {
+window.alert("Error 4: " + err.message);
+}
+});
+};
+// dosent working in sqlite
+this.comInitdAddForgenKey = function () {
+comDatabase.transaction(function (tx) {
+tx.executeSql("ALTER TABLE employee ADD CONSTRAINT fk_child_parent FOREIGN KEY(DNO) REFERENCES department(DNUMBER);", [], function (tx) {
+}
+);
+}
+, function (err) {
+window.alert("Error 4: cant add forginkey to employee " + err.message);
+}
+);
+};
+
+this.comInitDept_locations = function () {
+comDatabase.transaction(function (tx) {
+tx.executeSql("CREATE TABLE IF NOT EXISTS dept_locations(DNUMBER  numeric(1),DLOCATION    nvarchar(15),PRIMARY KEY(DNUMBER,DLOCATION),FOREIGN KEY (DNUMBER) REFERENCES DEPARTMENT(DNUMBER));", [], function (tx) {
+tx.executeSql("INSERT INTO dept_locations VALUES (1,'HOUSTON');");
+tx.executeSql("INSERT INTO dept_locations VALUES (4,'STAFFORD');");
+tx.executeSql("INSERT INTO dept_locations VALUES (5,'BELLAIRE');");
+tx.executeSql("INSERT INTO dept_locations VALUES (5,'SUGARLAND');");
+tx.executeSql(" INSERT INTO dept_locations VALUES (5,'HOUSTON');");
+});
+}, function (err) {
+if (err.message.indexOf("department already exists") === -1) {
+window.alert("Error 5: " + err.message);
+}
+}
+);
+};
+
+this.comInitDEPENDENT = function () {
+comDatabase.transaction(function (tx) {
+tx.executeSql('CREATE TABLE IF NOT EXISTS DEPENDENT(ESSN    nvarchar(9),DEPENDENT_NAME  nvarchar(15),SEX  nvarchar(1),BDATE date,RELATIONSHIP   nvarchar(8),PRIMARY KEY(ESSN,DEPENDENT_NAME),FOREIGN KEY (ESSN) REFERENCES EMPLOYEE(SSN))', [], function (tx) {
+tx.executeSql("INSERT INTO dependent VALUES ('333445555','ALICE','F','05-APR-76','DAUGHTER');");
+tx.executeSql("INSERT INTO dependent VALUES ('333445555','THEODORE','M','25-OCT-73','SON');");
+tx.executeSql("INSERT INTO dependent VALUES ('333445555','JOY','F','03-MAY-48','SPOUSE');");
+tx.executeSql("INSERT INTO dependent VALUES ('123456789','MICHAEL','M','01-JAN-78','SON');");
+tx.executeSql("INSERT INTO dependent VALUES ('123456789','ALICE','F','31-DEC-78','DAUGHTER');");
+tx.executeSql("INSERT INTO dependent VALUES ('123456789','ELIZABETH','F','05-MAY-57','SPOUSE');");
+tx.executeSql("INSERT INTO dependent VALUES ('987654321','ABNER','M','26-FEB-32','SPOUSE');");
+});
+}, function (err) {
+if (err.message.indexOf("Categories already exists") === -1) {
+window.alert("Error 6: " + err.message);
+}
+}
+);
+};
+
+this.comInitPROJECT = function () {
+comDatabase.transaction(function (tx) {
+tx.executeSql('CREATE TABLE IF NOT EXISTS PROJECT(PNAME nvarchar(15),PNUMBER    numeric(2),PLOCATION    nvarchar(15),DNUM   numeric(1),PRIMARY KEY(PNUMBER),UNIQUE(PNAME),FOREIGN KEY(DNUM) REFERENCES DEPARTMENT(DNUMBER))', [], function (tx) {
+tx.executeSql(" INSERT INTO project VALUES ('PRODUCTX',1,'BELLAIRE',5);");
+tx.executeSql(" INSERT INTO project VALUES ('PRODUCTY',2,'SUGARLAND',5);");
+tx.executeSql(" INSERT INTO project VALUES ('PRODUCTZ',3,'HOUSTON',5);");
+tx.executeSql(" INSERT INTO project VALUES ('COMPUTERIZATION',10,'STAFFORD',4);");
+tx.executeSql(" INSERT INTO project VALUES ('REORGANIZATION',20,'HOUSTON',1);");
+tx.executeSql(" INSERT INTO project VALUES ('NEWBENEFITS',30,'STAFFORD',4);");
+});
+}, function (err) {
+if (err.message.indexOf("Customers already exists") === -1) {
+window.alert("Error 7: " + err.message);
+}
+}
+);
+};
+this.comInitWORKS_ON = function () {
+comDatabase.transaction(function (tx) {
+tx.executeSql('CREATE TABLE IF NOT EXISTS WORKS_ON(ESSN nvarchar(9),PNO numeric(2),HOURS    numeric(3,1),PRIMARY KEY(ESSN,PNO),FOREIGN KEY (ESSN) REFERENCES EMPLOYEE(SSN),FOREIGN KEY (PNO) REFERENCES PROJECT(PNUMBER))', [], function (tx) {
+tx.executeSql("INSERT INTO works_on VALUES ('123456789',1,32.5);");
+tx.executeSql("INSERT INTO works_on VALUES ('123456789',2,7.5);");
+tx.executeSql("INSERT INTO works_on VALUES ('666884444',3,40.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('453453453',1,20.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('453453453',2,20.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('333445555',2,10.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('333445555',3,10.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('333445555',10,10.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('333445555',20,10.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('999887777',30,30.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('999887777',10,10.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('987987987',10,35.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('987987987',30,5.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('987654321',30,20.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('987654321',20,15.0);");
+tx.executeSql("INSERT INTO works_on VALUES ('888665555',20,null);");
+});
+}, function (err) {
+if (err.message.indexOf("Employees already exists") === -1) {
+window.alert("Error 8: " + err.message);
+}
+});
+};
+
+this.runSQL = function (n) {
+comDatabase.transaction(function (tx) {
+tx.executeSql("SELECT * FROM works_on", [], function () {
+var sql = document.getElementById("where").value;
+comDBObj.comExecuteSQL(sql);
+}
+);
+}, function (err) {
+comDBObj.comInitDatabase(0);
+}
+);
+};
+}
+</script>
+<script type="text/javascript">
+var comCompanyWebSQLOK = !!window.openDatabase;
+var statementSupport = "";
+if (comCompanyWebSQLOK === true && statementSupport === "") {
+comWebSQL1 = new comWebSQLInit();
+} else {
+NoWebSQLSubmit();
+}
+
+function showDescription() {
+document.getElementById("descriptionDIV").style.display = "block";
+}
+
+function hideDescription() {
+document.getElementById("descriptionDIV").style.display = "none";
+}
+
+function comSQLSubmit() {
+if (window.editor) {
+window.editor.save();
+}
+if (comCompanyWebSQLOK === true && statementSupport === "") {
+comWebSQL1.runSQL();
+} else {
+NoWebSQLSubmit();
+}
+}
+
+function companyDbWriteDBInfo() {
+if (comCompanyWebSQLOK === true && statementSupport === "") {
+comWebSQL1.myDatabase();
+} else {
+if (comCompanyWebSQLOK === true && statementSupport === "-1") {
+}
+}
+}
+function NoWebSQLSubmit() {
+var erM = $("#errorMsg");
+erM.empty();
+erM.append("Web Sql dont support this web browser ");
+alert("plese use chrome, or safari to work with database");
+}
+companyDbWriteDBInfo();
+</script>

@@ -1,0 +1,35 @@
+---
+layout: page
+permalink: /courses/
+title: "Courses"
+author_profile: false
+header:
+  overlay_image: courses_banner.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+---
+{% include base_path %}
+<style>
+  .section-title:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid #dddddd;
+}
+
+</style>
+{% for category in site.categories reversed %}
+   <h2 class="" name="{{ category | first }}">Teaching {{ category | first }}</h2>
+  <div >
+       {% for posts in category  %}
+       {% for post in posts %}
+       {% if post.title %}
+       <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <h5 class="" itemprop="headline">
+         <a href="{{ post.url }}" rel="permalink">{{ post.title }}</a></h5></article>{% endif %}
+       {% endfor %}
+       {% endfor %}
+   </div>
+   <div class="divider"></div>
+  {% endfor %}
