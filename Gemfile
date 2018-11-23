@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.6.1"
+gem "jekyll", "~> 3.6.3"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
@@ -22,6 +22,7 @@ gem "jekyll", "~> 3.6.1"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem 'jekyll-sitemap'
+  gem "ffi", ">= 1.9.24"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
